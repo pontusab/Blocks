@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blocks\n"
+"POT-Creation-Date: 2013-04-19 17:39+0100\n"
+"PO-Revision-Date: 2013-04-19 17:42+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/Pontus/Sites/raa.site/wp-content/plugins/"
+"blocks\n"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-functions.php:55
+msgid "You don't have permission to edit or create blocks"
+msgstr "Du har inte rättigheter att redigera eller skapa block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-functions.php:133
+msgid "You don't have premission to edit or create blocks"
+msgstr "Du har inte rättigheter att redigera eller skapa block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:10
+msgid "Block Settings"
+msgstr "Inställningar"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:11
+msgid "Add block"
+msgstr "Lägg till block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:82
+msgid "Search page"
+msgstr "Sök"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:92
+msgid "No title"
+msgstr "Ingen Rubrik"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:92
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:141
+msgid "Add on areas"
+msgstr "Lägg till på ytor"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:92
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:139
+msgid "Remove"
+msgstr "Ta bort"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:141
+msgid "Add this"
+msgstr "Lägg till"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:141
+msgid "Ta bort"
+msgstr "Ta bort"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:252
+msgid "Here you can add specific settings for the block"
+msgstr "Här kan du lägga till inställningar för blocket"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:288
+msgid "Default Template"
+msgstr "Standardmall"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-metaboxes.php:299
+msgid "Add a link to the title"
+msgstr "Lägg till en länk på rubriken"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:14
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-types-metaboxes.php:87
+msgid "Blocks"
+msgstr "Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:15
+msgid "Block"
+msgstr "Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:16
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:17
+msgid "Add Block"
+msgstr "Lägg till Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:18
+msgid "Edit Block"
+msgstr "Redigera Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:19
+msgid "New Block"
+msgstr "Nytt Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:20
+msgid "View Block"
+msgstr "Visa Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:21
+msgid "Search Block"
+msgstr "Sök efter Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:22
+msgid "No Blocks Found"
+msgstr "Inga Block Funna"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:23
+msgid "No Blocks found in the trash."
+msgstr "Inga Block Funna I Papperskorgen"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:24
+msgid "Block parent"
+msgstr "Block-förälder"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:61
+msgid "Left column"
+msgstr "Vänsterkolumn"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:62
+msgid "This is the left sidebar"
+msgstr "Det här är vänsterkolumnen"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:65
+msgid "Right column"
+msgstr "Högerkolumnen"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:66
+msgid "This is the right sidebar"
+msgstr "Det här är högerkolumnen"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-register.php:88
+msgid "Block updated. See the result on the pages you added the block on."
+msgstr ""
+"Block uppdaterad. Se resultatet på sidor där du har lagt till blocket på."
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:10
+msgid "Settings"
+msgstr "Inställningar"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:85
+msgid "Block settings updated."
+msgstr "Inställningar sparade."
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:109
+msgid "Add new areas"
+msgstr "Lägg till nya ytor"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:111
+msgid "Here you can edit or add new areas"
+msgstr "Här kan du redigera eller lägga till nya ytor"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:112
+msgid "Add a key, Name and Description"
+msgstr "Ange en nyckel, Namn och beskrivning"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:113
+msgid "The Name and Description will be visable in WordPress-admin"
+msgstr "Namn och Beskrivning blir synligt i redigeringsläge"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:122
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:129
+msgid "Key"
+msgstr "Nyckel"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:123
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:130
+msgid "Name"
+msgstr "Namn"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:124
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:131
+msgid "Description"
+msgstr "Beskrivning"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:154
+msgid "Exclude blocks"
+msgstr "Excludera Blocks"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:156
+msgid "Here you can exclude blocks on specific post types"
+msgstr "Här kan du excludera Blocks från Post Typer"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-settings.php:191
+msgid "Save Settings"
+msgstr "Spara inställningar"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-template.php:100
+msgid "Edit block"
+msgstr "Redigera Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-template.php:100
+msgid "Edit"
+msgstr "Redigera"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-types-metaboxes.php:20
+msgid "Your Areas"
+msgstr "Dina Ytor"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-types-metaboxes.php:88
+msgid "Search blocks"
+msgstr "Sök Block"
+
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-types-metaboxes.php:104
+#: /Users/Pontus/Sites/raa.site/wp-content/plugins/blocks/inc/block-types-metaboxes.php:166
+msgid "Remove Block"
+msgstr "Ta bort Block"

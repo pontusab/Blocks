@@ -1,0 +1,808 @@
+@charset "UTF-8";
+
+// Handy mixins
+@mixin prefixr($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+// Clearfix 
+.clearfix {
+	&:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+}
+
+// Some common colors
+$bg: #F9F9F9;
+$bg2: #ECECEC;
+$border-color: #DFDFDF;
+
+// This holds the styles on post-types
+#blocks_save {
+	background: $bg;
+	border-top: none;
+	border-bottom: none;
+	margin-top: 20px;
+	@include prefixr(border-radius, 0px);
+
+	.inside {
+		@extend .clearfix;
+		margin: 0;
+		padding: 0;
+
+		.post-title,
+		.block-title {
+			padding: 0 9px 13px 9px;
+			position: relative;
+			cursor: move;
+			line-height: 30px;
+			overflow: hidden;
+			height: 17px;
+		}
+	}
+
+	.blocks-holder {
+		@extend .clearfix;
+
+		.sidebar-name-arrow {
+			display: none;
+		}
+	}
+
+	p.description {
+		margin: 0;
+	}
+
+	.search {
+		position: absolute;
+		outline: none;
+		border: 1px solid $border-color;
+		top: 6px;
+		right: 5px;
+		background-color: #fff;
+		width: 200px;
+		font-size: 12px;
+		line-height: 15px;
+		font-family: sans-serif;
+		padding: 5px 9px !important;
+		background: url(../img/icons.png) no-repeat 105% -40px #fff;
+		@include prefixr(border-radius, 13px);
+	}
+
+	.hndle,
+	.handlediv {
+		display: none;
+	}
+
+	.inner-list {
+		padding: 10px;
+		background: #fff;
+		min-height: 120px;
+		overflow: hidden;
+	}
+
+	.list {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+
+		li {
+			@include prefixr(box-shadow, inset 0 1px 0 #fff);
+			@include prefixr(border-radius, 0px);
+			background: #FCFCFC;
+			border: 1px solid $border-color;
+			text-shadow: #fff 0 1px 0;
+			color: #222;
+			font-size: 12px;
+			font-weight: bold;
+			width: 23%;
+			display: inline-table;
+			position: relative;
+			z-index: 10;
+			margin: 1%;
+			height: 30px;
+
+			.remove-block {
+				@include prefixr(border-radius, 9px);
+				display: none;
+				height: 18px;
+				cursor: pointer;
+				text-align: center;
+				width: 18px;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				background: #FCFCFC;
+				border: 1px solid $border-color;
+				z-index: 1;
+				text-shadow: none;
+				color: #222;
+				font-weight: normal;
+				margin: 0;
+				line-height: 18px;
+				font-size: 9px;
+			}
+		}
+	}
+
+	.inner-list {
+		.list {
+			min-height: 160px;
+			overflow: hidden;
+		}
+	}
+
+	.loading {
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: 23px;
+		top: 11px;
+		background: url(../img/small-loader.gif) no-repeat;
+	}
+
+	.paging-holder {
+		width: 100%;
+		height: 40px;
+		border-top: 1px solid #DFDFD9;
+		border-bottom: 1px solid #DFDFD9;
+		position: relative;
+
+		span {
+			line-height: 40px;
+			font-family: Comic Sans MS, sans-serif;
+			padding-left: 20px;
+		}
+
+		.paging {
+			float: right;
+			padding: 0;
+			margin: 4px 23px 0 0;
+		}
+
+		li {
+			float: left;
+			padding: 0;
+			margin: 4px 0 0 5px;
+
+			a {
+				@include prefixr(border-radius, 3px);
+				display: block;
+				text-align: center;
+				line-height: 24px;
+				height: 24px;
+				width: 24px;
+				color: white;
+				text-decoration: none;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+				background: #BEBEBE;
+				border-color: #ADADAD;
+
+				&:hover,
+				&.active {
+					@include prefixr(box-shadow, inset 0 1px 0 rgba(120, 200, 230, 0.5));	
+					background-color: #21759B;
+					background-image: -webkit-gradient(linear,left top,left bottom,from(#2A95C5),to(#21759B));
+					background-image: -webkit-linear-gradient(top,#2A95C5,#21759B);
+					background-image: -moz-linear-gradient(top,#2A95C5,#21759B);
+					background-image: -ms-linear-gradient(top,#2A95C5,#21759B);
+					background-image: -o-linear-gradient(top,#2A95C5,#21759B);
+					background-image: linear-gradient(to bottom,#2A95C5,#21759B);
+					border-color: #21759B;
+					border-bottom-color: #1E6A8D;
+				}
+			}
+		}
+	}
+
+	.blocks-wrap .block:hover .remove-block {
+		display: block;
+	}
+
+	.blocks-area {
+		float: left;
+		min-height: 100px;
+		width: 76%;
+		padding: 10px 0;
+		margin-left: -1px !important;
+		background: #fff;
+		border-left: 1px solid $border-color;
+		@extend .list;
+
+		span {
+			color: #CCC;
+			text-transform: uppercase;
+			float: right;
+			font-size: 11px;
+			margin: 8px 10px 0 0;
+		}
+	}
+
+	.blocks-holder  {
+		border-bottom: 1px solid $border-color;
+		width: 100%;
+		float: left;
+	}
+
+	.header {
+		height: 40px;
+		border-top: 1px solid $border-color;
+		line-height: 40px;
+		padding: 0 0 0 10px;
+		border-bottom: 1px solid $border-color;
+		background: #EEE;
+		background-image: -webkit-gradient(linear,left bottom,left top,from(#E5E5E5),to(#F4F4F4));
+		background-image: -webkit-linear-gradient(bottom,#E5E5E5,#F4F4F4);
+		background-image: -moz-linear-gradient(bottom,#E5E5E5,#F4F4F4);
+		background-image: -o-linear-gradient(bottom,#E5E5E5,#F4F4F4);
+		background-image: linear-gradient(to top,#E5E5E5,#F4F4F4);
+
+		span {
+			color: #333;
+			font-size: 13px;
+		}
+	}
+
+	.header span {
+		font-weight: bold;
+	}
+
+	.blocks-title {
+		min-height: 84px;
+		width: 24%;
+		background: $bg;
+		float: left;
+	}
+
+	.blocks-inner {
+		padding: 10px 20px;
+	}
+
+	.blocks-title h2 {
+		display: block;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		color: #333;
+	}
+
+	.block-excerpt {
+		font-weight: normal;
+		padding: 0 10px;
+	}
+
+	.sidebar-name-arrow {
+		position: absolute;
+		right: -2px;
+		top: -2px;
+		cursor: pointer;
+		z-index: -1;
+	}
+
+	.block {
+
+		.block-info {
+			&.open {
+				display: block;
+				border-top: 1px solid #dfdfdf;
+
+				img {
+					display: block;
+				}
+			}
+			display: none;
+		}
+
+		img {
+			display: none;
+			width: 100%;
+			height: auto;
+		}
+
+		.expanded,
+		.blocks_area {
+			width: 100%;
+			min-height: 200px;
+			display: inline-block;
+			margin: 0 10px 15px;
+		}
+
+		&:hover {
+			.sidebar-name-arrow {
+				z-index: 1;
+			}
+		}
+
+		&.expanded {
+			.block-info {
+				display: block;
+				border-top: 1px solid $border-color;
+				padding: 0 5px;
+			}
+
+			img {
+				border-top: 1px solid $border-color;
+				display: block;
+			}
+
+		}
+	}
+
+	.blocks_area {
+		&:last-child {
+			margin: 0 0 0 15px !important;
+		}
+	}
+
+}
+
+// This holds the styles on block-page
+#blocks_single_pages {
+	@include prefixr(border-radius, 0px);
+	border: none;
+	background: none;
+
+	.inside {
+		@extend .clearfix;
+		margin: 0;
+		padding: 0;
+	}
+
+	p.description {
+		margin: 0;
+	}
+
+	h3.hndle,
+	.handlediv {
+		display: none;
+	}
+
+	.blocks-tabs {
+		@extend .clearfix;
+		padding: 15px;
+		height: 265px;
+		overflow: hidden;
+
+		.posts-holder {
+			width: 49%;
+			height: 217px;
+			border: 1px solid $border-color;
+			background-color: #fff;
+			float: left;
+			overflow-x: hidden;
+
+			&:last-child {
+				float: right;
+				height: 261px;
+				margin-top: -44px;
+			}
+
+			li {
+				border-bottom: #F8F8F8 solid 1px;
+				float: left;
+				width: 100%;
+				position: relative;
+
+				p {
+					display: block;
+					position: relative;
+					padding: 7px 9px;
+					text-decoration: none;
+					color: #21759B;
+					float: left;
+					margin: 0;
+					width: 55%;
+					overflow: hidden;
+					height: 17px;
+					line-height: 20px;
+				}
+			}
+
+			.list-pages {
+				.add-areas {
+					display: none;
+				}
+			}
+
+			.save-block {
+				.add {
+					display: none;
+				}
+
+				.delete {
+					width: 16px;
+					height: 16px;
+					position: absolute;
+					top: 8px;
+					right: 18px;
+					background: url(../img/icons.png) no-repeat -16px -73px;
+					cursor: pointer;
+				
+					&:hover {
+						background-position: -16px -89px;
+					}
+				}
+
+				.loading {
+					.delete {
+						background: url(../img/small-loader.gif) no-repeat;
+					}
+				}
+			}
+
+			li.block {
+				.loading {
+					width: 10px;
+					height: 10px;
+					background: url(../img/mini-loader.gif) no-repeat 10px 10px !important;
+
+				}
+			}
+
+			.areas {
+				@include prefixr(border-radius, 5px);
+				display: none;
+				color: #a8a8a8;
+				text-transform: uppercase;
+				font-size: 11px;
+				max-width: 200px;
+				position: absolute;
+				right: 5px;
+				top: 35px;
+				z-index: 1;
+				background: #464646;
+				border: 1px solid #464646;
+				z-index: 10000;
+
+				> span{
+					position: absolute;
+					top: -10px;
+					right: 60px;
+					width: 15px;
+					height: 10px;
+					background: url(../img/icons.png) no-repeat 0px -318px;
+				}
+
+				li {
+					max-width: 200px;
+					padding: 6px 0 !important;
+					margin: 0 !important;
+					cursor: pointer;
+					border-color: #424242;
+					text-transform: none;
+					color: #fff;
+
+					&:hover {
+						background: #4B4B4B;
+					}
+
+					&:last-child {
+						border: none;
+					}
+
+					span {
+						padding: 10px 7px 10px 30px;
+						background: url(../img/icons.png) no-repeat 10px -209px;
+					
+						&.saved {
+							background: url(../img/icons.png) no-repeat 10px -177px;
+						}
+					}
+				}
+
+				&.open {
+					display: block;
+				}
+			}
+
+			.children {
+				@extend .clearfix;
+				display: none;
+
+				&.open {
+					display: block;
+					li {
+						p {
+							padding-left: 50px;
+						}
+					}
+				}
+			}
+	
+
+			.block-parent {
+				background: url(../img/icons.png) no-repeat 15px 9px;
+				float: left;
+				width: 25px;
+				height: 30px;
+				margin: 0;
+				cursor: pointer;
+
+				&.open {
+					background-position: 13px -11px;
+				}
+			}
+
+			.bulk-add {
+				background: url(../img/icons.png) no-repeat 0 -73px;
+				position: absolute;
+				top: 7px;
+				right: 70px;
+				height: 16px;
+				width: 16px;
+				margin: 0;
+
+				&:hover {
+					background-position: 0 -89px;
+				}
+			}
+		}
+
+		.search-head {
+			.inner {
+				padding: 7px;
+			}
+			height: 43px;
+			border: #dfdfdf solid 1px;
+			border-bottom: 0;
+			width: 49%;
+			color: #333;
+			background: #F1F1F1;
+			background-image: -webkit-gradient(linear,left bottom,left top,from($bg2),to($bg));
+			background-image: -webkit-linear-gradient(bottom,$bg2,$bg);
+			background-image: -moz-linear-gradient(bottom,$bg2,$bg);
+			background-image: -o-linear-gradient(bottom,$bg2,$bg);
+			background-image: linear-gradient(to top,$bg2,$bg);
+		}
+
+		.block-page-search-label {
+			font-size: 12px;
+			font-family: sans-serif;
+			color: #999;
+			position: absolute;
+			margin-top: 5px;
+			margin-left: 10px;
+			text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+		}
+
+		.block-pages-search  {
+			border-radius: 13px;
+			width: 100%;
+			font-size: 12px;
+			line-height: 13px;
+			border-radius: 13px;
+			font-family: sans-serif;
+			padding: 5px 9px !important;
+			background: url(../img/icons.png) no-repeat 100% -41px #fff;
+			outline: none;
+		}
+
+		&:first-child {
+			@include prefixr(border-top-right-radius, 3px);
+		}
+		.list {
+			height: 220px;
+			margin: 0;
+
+			.add {
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				top: 8px;
+				right: 18px;
+				background: url(../img/icons.png) no-repeat 0 -73px;
+				cursor: pointer;
+			
+				&:hover {
+					background-position: 0 -89px;
+				}
+			}
+
+			
+			.add-areas {
+				color: #CCC;
+				text-transform: uppercase;
+				float: right;
+				font-size: 11px;
+				margin: 9px 40px 0 0;
+				cursor: pointer;
+			}
+
+			.add-areas {
+				color: #21759B;
+			}
+		}
+	}
+
+	.block-help {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+
+	#blocks-area-control {
+		padding-top: 15px; 
+		width: 100%;
+		overflow: hidden;
+
+		ul {
+			width: 100%;
+		}
+
+		li {
+			margin: 0;
+			position: relative;
+
+			&.saved {
+				background: #F2FFEF;
+			}
+
+			&[aria-selected] a {
+				outline: none;
+				background: #FDFDFD;
+				border: 1px solid #D5D5D5;
+				border-bottom: none;
+				position: relative;
+				bottom: -1px;
+				display: block;
+				text-shadow: 0 1px 1px #fff;
+				color: #A8A8A8;
+				text-decoration: none;
+				padding: 10px;
+				font-family: sans-serif;
+				font-size: 12px;
+			}
+
+			&[aria-selected="true"] a {
+				background: #F9F9F9;
+				border-bottom: 1px solid #F8F8F8;
+				color: #555;
+				z-index: 1;
+			}
+
+			&[aria-selected]:first-child {
+				margin-left: 20px;
+			}
+		}
+
+		.blocks-tabs {
+			overflow: hidden;
+			background: $bg;
+			border: 1px solid #D5D5D5;
+
+			[role="tabpanel"] {
+				@extend .clearfix;
+			}
+		}
+	}
+
+	.no-areas {
+		background: $bg;
+		width: 100%;
+		height: 130px;
+		padding: 17px 0 0;
+		text-align: center;
+		border: 1px solid $border-color;
+	}
+}
+
+// This holds the styles on settingspage
+.blocks_page_blocks-settings {
+
+	div.updated {
+		margin: 20px 0 0 !important;
+	}
+
+	#poststuff {
+		padding: 0;
+		h3 {
+			font-family: sans-serif !important;
+			font-weight: bold;
+			font-size: 1.17em;
+			margin: 1em 0;
+			padding: 0;
+		}
+	}
+
+	.status {
+		display: inline-block;
+		padding: 4px 11px;
+		font-size: 12px;
+		line-height: 14px;
+		color: #ffffff;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		white-space: nowrap;
+		vertical-align: baseline;
+		@include prefixr(border-radius, 3px);
+
+		&.active {
+			background-color: #5eb95e;
+		}
+
+		&.inactive {
+			background-color: #dd514c;
+		}
+	}
+
+	table {
+
+		thead {
+			tr {
+				height: 30px;
+			}
+		}
+		td {
+			padding: 15px 0 15px 10px;
+
+			.button {
+				margin-left: 10px;
+			}
+		}
+
+		tr {
+			height: 60px;
+			&:nth-child(odd) {
+				background: #fff !important;
+			}
+		}
+	
+
+		input[type="text"] {
+			padding: 7px;
+			width: 200px;
+		}
+
+		.empty-cache-holder {
+			position: relative;
+		}
+
+		#blocks-class {
+			width: 70px;
+		}
+	}
+	
+	.wp-pointer-content {
+		ol {
+			margin: 0 15px 10px 32px;
+		}
+	}
+
+	table.post-types td a.button {
+		margin: 0;
+	}
+}
+
+// Dropdown
+#blocks-template {
+	width: 100%;
+}
+
+// Menu icon
+#menu-posts-blocks .wp-menu-image {
+  background: url(../img/icons.png) no-repeat 7px -141px  !important;
+}
+
+// Meta-fields 
+#blocks-class, 
+#blocks-link {
+	padding: 7px;
+}
+
+// Widget
+.block-single-widget select {
+	width: 100%;
+}
+.block-single-widget .row-check {
+	width: 50%;
+	float: left;
+}

@@ -1,0 +1,307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blocks\n"
+"POT-Creation-Date: 2013-01-16 17:37+0100\n"
+"PO-Revision-Date: 2013-01-16 17:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/block-functions.php:84 inc/block-functions.php:135
+msgid "You don't have premission to edit or create blocks"
+msgstr "Du har inte rättigheter att redigera eller skapa block"
+
+#: inc/block-metaboxes.php:10
+msgid "Block Settings"
+msgstr "Inställningar"
+
+#: inc/block-metaboxes.php:11
+msgid "Add block"
+msgstr "Lägg till block"
+
+#: inc/block-metaboxes.php:151
+msgid "Search page"
+msgstr "Sök"
+
+#: inc/block-metaboxes.php:179
+msgid ""
+"You have not defined any areas in any of your theme templates, please do so"
+msgstr "Du har inte definerat några ytor i dina tema-filer, gör det först"
+
+#: inc/block-metaboxes.php:180
+msgid "Getting started with Blocks"
+msgstr "Komigång med Block"
+
+#: inc/block-metaboxes.php:227
+msgid "Parent"
+msgstr "Förälder"
+
+#: inc/block-metaboxes.php:231
+msgid "Add this"
+msgstr "Lägg till detta"
+
+#: inc/block-metaboxes.php:231
+msgid "Add on areas"
+msgstr "Lägg till på ytor"
+
+#: inc/block-metaboxes.php:289
+msgid "Here you can add specific settings for the block"
+msgstr "Här kan du ange specifika inställningar för blocket"
+
+#: inc/block-metaboxes.php:322
+msgid "Default Template"
+msgstr "Standardmall"
+
+#: inc/block-metaboxes.php:333
+msgid "Add a link to the title"
+msgstr "Lägg till en länk på titeln"
+
+#: inc/block-metaboxes.php:336
+msgid "Add Block-specific class"
+msgstr "Lägg till block-specifik klass"
+
+#: inc/block-register.php:14 inc/block-types-metaboxes.php:59
+msgid "Blocks"
+msgstr "Block"
+
+#: inc/block-register.php:15
+msgid "Block"
+msgstr "Block"
+
+#: inc/block-register.php:16 inc/block-register.php:17
+msgid "Add Block"
+msgstr "Lägg till Block"
+
+#: inc/block-register.php:18
+msgid "Edit Block"
+msgstr "Redigera Block"
+
+#: inc/block-register.php:19
+msgid "New Block"
+msgstr "Nytt Block"
+
+#: inc/block-register.php:20
+msgid "View Block"
+msgstr "Visa Block"
+
+#: inc/block-register.php:21
+msgid "Search Block"
+msgstr "Sök efter Block"
+
+#: inc/block-register.php:22
+msgid "No Blocks Found"
+msgstr "Inga Block Funna"
+
+#: inc/block-register.php:23
+msgid "No Blocks found in the trash."
+msgstr "Inga Block Funna I Papperskorgen"
+
+#: inc/block-register.php:24
+msgid "Block parent"
+msgstr "Block-förälder"
+
+#: inc/block-register.php:63
+msgid "Left column"
+msgstr "Vänsterkolumn"
+
+#: inc/block-register.php:64
+msgid "This is the left sidebar"
+msgstr "Det här är vänsterkolumnen"
+
+#: inc/block-register.php:67
+msgid "Right column"
+msgstr "Högerkolumnen"
+
+#: inc/block-register.php:68
+msgid "This is the right sidebar"
+msgstr "Det här är högerkolumnen"
+
+#: inc/block-register.php:90
+msgid "Block updated. See the result on the pages you added the block on."
+msgstr ""
+"Block uppdaterad. Se resultatet på sidor där du har lagt till blocket på."
+
+#: inc/block-settings.php:10
+msgid "Settings"
+msgstr "Inställningar"
+
+#: inc/block-settings.php:94
+msgid "General"
+msgstr "Allmänt"
+
+#: inc/block-settings.php:95
+msgid "Advanced"
+msgstr "Avancerat"
+
+#: inc/block-settings.php:125
+msgid "Block settings updated."
+msgstr "Inställningar uppdaterade."
+
+#: inc/block-settings.php:172
+msgid "Add new areas"
+msgstr "Lägg till nya ytor"
+
+#: inc/block-settings.php:174
+msgid "Here you can edit or add new areas"
+msgstr "Här kan du redigera eller lägga till nya ytor"
+
+#: inc/block-settings.php:175
+msgid "Add a key, Name and Description"
+msgstr "Ange en nyckel, Namn och beskrivning"
+
+#: inc/block-settings.php:176
+msgid "The Name and Description will be visable in WordPress-admin"
+msgstr "Namn och Beskrivning blir synligt i redigeringsläge"
+
+#: inc/block-settings.php:179
+msgid "Instructions"
+msgstr "Instruktioner"
+
+#: inc/block-settings.php:182
+msgid "Add areas to your theme"
+msgstr "Lägg till yter i ditt tema"
+
+#: inc/block-settings.php:183
+msgid ""
+"First you need to have one ore more <b>Areas</b>, then you need to define "
+"them in your theme where you want them to show up."
+msgstr ""
+"Först behöver du ha en eller flera <b>Ytor</b>, sen behöver du definera i "
+"ditt tema vart ytorna ska visas."
+
+#: inc/block-settings.php:184
+msgid ""
+"When you created the areas you defined a <b>Key</b>, witch you use to call "
+"that area from the theme."
+msgstr ""
+"När du skapar ytor definerar du en <b>Nyckel</b>, som du använder för att "
+"hämta blocken i ditt  tema."
+
+#: inc/block-settings.php:186
+msgid ""
+"Go to your theme folder and select the template where you want to show "
+"blocks, e.g page.php"
+msgstr ""
+"Gå till din temamapp och välj en mall där du vill visa blocks, t.ex page.php"
+
+#: inc/block-settings.php:188
+msgid "In the top of the file add a comment like this:"
+msgstr "I sidhuvudet av filen lägg till en kommentar såhär:"
+
+#: inc/block-settings.php:192
+msgid ""
+"Then you need to define where in that file you want the blocks, call this "
+"function:"
+msgstr ""
+"Sen behöver du definera vart i den filen du vill skriva ut blocken, med den "
+"här funktionen:"
+
+#: inc/block-settings.php:195
+msgid "Go and"
+msgstr "Gå och"
+
+#: inc/block-settings.php:195
+msgid "create"
+msgstr "skapa"
+
+#: inc/block-settings.php:195
+msgid "a block and add it to a <b>Page</b>"
+msgstr "ett block och lägg till den på en <b>Sida</b>"
+
+#: inc/block-settings.php:196
+msgid "Read more about how to use and customize blocks in the"
+msgstr "Läs mer hur du använder och ändrar blocks i "
+
+#: inc/block-settings.php:196
+msgid "Documentation"
+msgstr "Dokumentationen"
+
+#: inc/block-settings.php:206 inc/block-settings.php:213
+msgid "Key"
+msgstr "Nyckel"
+
+#: inc/block-settings.php:207 inc/block-settings.php:214
+msgid "Name"
+msgstr "Namn"
+
+#: inc/block-settings.php:208 inc/block-settings.php:215
+msgid "Description"
+msgstr "Beskrivning"
+
+#: inc/block-settings.php:223
+msgid "Remove"
+msgstr "Ta bort"
+
+#: inc/block-settings.php:248
+msgid "Enable Cache"
+msgstr "Aktivera Cache"
+
+#: inc/block-settings.php:250
+msgid "Blocks have a built in cache soulution, it uses the Transients API"
+msgstr "Blocks har en inbyggd funktion för cache, den använder Transients API"
+
+#: inc/block-settings.php:251
+msgid ""
+"This will work on sites like intranets because it uses the database to cache "
+"and not static HTML"
+msgstr ""
+"Det kommer fungera på sidor som intranät då det använder databasen och inte "
+"statisk HTML"
+
+#: inc/block-settings.php:261
+msgid "Empty cache"
+msgstr "Rensa cache"
+
+#: inc/block-settings.php:268
+msgid "Enable edit-button"
+msgstr "Aktivera redigera-knapp"
+
+#: inc/block-settings.php:269
+msgid ""
+"Enable this if you want a link on eatch block in the front-end that goes to "
+"the edit-screen of the block"
+msgstr ""
+"Aktivera om du vill visa redigera-knappar på framsidan som leder till blocket"
+
+#: inc/block-settings.php:278
+msgid "Add your own css-class to the blocks"
+msgstr "Lägg till egen css-klass på blocken"
+
+#: inc/block-settings.php:279
+msgid ""
+"Here you can add you own css-class that will be printed on the front-end"
+msgstr "Här kan du ange en egen css-klass som kommer skrivas ut på front-end"
+
+#: inc/block-settings.php:282
+msgid "class"
+msgstr "klass"
+
+#: inc/block-settings.php:295
+msgid "Save Settings"
+msgstr "Spara Inställningar"
+
+#: inc/block-template.php:95
+msgid "Edit block"
+msgstr "Redigera block"
+
+#: inc/block-template.php:95
+msgid "Edit"
+msgstr "Redigera"
+
+#: inc/block-types-metaboxes.php:16
+msgid "Your Areas"
+msgstr "Dina Ytor"
+
+#: inc/block-types-metaboxes.php:60
+msgid "Search blocks"
+msgstr "Sök block"
+
+#: inc/block-types-metaboxes.php:78 inc/block-types-metaboxes.php:141
+msgid "Remove Block"
+msgstr "Ta bort Block"
