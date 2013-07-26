@@ -6,7 +6,7 @@ An advanced yet simple block system for WordPress, allowing you to create spaces
 
 Follow these steps:
 
-* [Download the latest release](https://github.com/pontusab/Blocks/master).
+* [Download the latest release](https://github.com/pontusab/Blocks/archive/master.zip).
 * Clone the repo: `git clone git://github.com/pontusab/Blocks.git`.
 * Install with in `/wp-content/plugins/`.
 * Add `<?php //Block Areas: left ?>` to your template `(page.php, single.php my-template.php)` header.
