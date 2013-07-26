@@ -9,8 +9,8 @@ Follow these steps:
 * [Download the latest release](https://github.com/pontusab/Blocks/master).
 * Clone the repo: `git clone git://github.com/pontusab/Blocks.git`.
 * Install with in `/wp-content/plugins/`.
-* Add `//Block Areas: left` to your template header.
-* Add `<?php get_blocks('left'); ?>` where you want the output.
+* Add `<?php //Block Areas: left ?>` to your template header.
+* Add `<?php get_blocks('left'); ?>` where you want the blocks.
 
 ## Screenshots
 
