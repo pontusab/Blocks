@@ -1,4 +1,4 @@
-## WordPress Dynamic Blocks
+## WordPress Dynamic Blocks - This is the old pakage, now using Composer
 
 An advanced yet simple block system for WordPress, allowing you to create spaces for different pages and posts where you can add content and images easily on one or more pages. It finds the areas that are actually used in the current template and shows an easy to use admin interface.
 
